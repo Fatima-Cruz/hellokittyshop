@@ -10,7 +10,7 @@ import './App.css';
 import NavBar from './Components/NavBar';
 import Footer from './Components/Footer';
 import HomePage from './Components/HomePage';
-import Hero from './Components/Hero';
+
 import ProductsPage from './Components/ProductsPage';
 import ContactPage from './Components/ContactPage';
 
@@ -18,8 +18,8 @@ function App() {
   return (
     <Router>
     <div>
+      
     <NavBar />
-
       <Switch>
         <Route path="/" exact>
           <HomePage />
@@ -31,7 +31,7 @@ function App() {
           <ContactPage />
         </Route>
       </Switch>
-      <Hero /> 
+      
       <Footer />
     </div>
  

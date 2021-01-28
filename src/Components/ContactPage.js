@@ -1,11 +1,16 @@
- import React from 'react'
+ import React from 'react';
+ import bow from '../Images/bow.svg';
+
 
 const ContactPage = () => {
     return(
+     
         <form> 
         <div className="contactBox">
+
+      
          <div className="form"> 
-            <h1 className="title"> Contact us! <img className="bow_img" src="Images/bow.svg" alt="bow" /> </h1>
+            <h1 className="title"> Contact us! <img className="bow_img" src={bow }alt="bow" /> </h1>
            <label for="name">Name:</label>
            <input type="text" id="name" name="name" required /> 
            </div>
@@ -46,7 +51,6 @@ const ContactPage = () => {
            </div>
             </div> 
         </form>
-    
     );
 }
 

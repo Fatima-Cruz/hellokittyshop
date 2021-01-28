@@ -4,8 +4,9 @@
 }
 
 body {
-  background-image: linear-gradient(#ff2600, white);
+   background-image: linear-gradient(#ff2600, white); 
 }
+
 
 .navbar_main {
   display: inline-block;
@@ -42,8 +43,15 @@ figure {
   text-shadow: 2px 2px 8px black, 0 0 15px gray, 0 0 5px blue;
 }
 /* Home Page */
+.slide-image{
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-/* test */
+
 .mySlides img {
   height: 700px;
   background-position: center;
@@ -52,100 +60,12 @@ figure {
   position: relative;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(241, 238, 238, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
- .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-} 
-
-/* test */
-
-/* 
 #home_body {
   background: white;
   margin: 0; 
   padding: 0;
   
-} */
+} 
 
 .hero_image {
   background-image: url("Images/hk7.jpg");
@@ -160,10 +80,11 @@ figure {
   font-family: "Quicksand", sans-serif;
   text-align: center;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #e8e8e8;
+  z-index: 1;
 }
 
 .hero_text {
@@ -239,14 +160,15 @@ figure {
   cursor: pointer;
 }
 
+
 .stars img {
   display: inline-block;
   background-color: transparent;
-  height: 120px;
-  width: 60%;
+  height: 90px;
+  width: 40%;
   position: relative;
   position: relative;
-  left: 20%;
+  left: 30%;
 }
 
 .stars_text {
@@ -374,6 +296,7 @@ input {
 }
 
 textarea {
+  margin-left: 5px;
   border-radius: 30px;
   color: black;
   padding: 5px 25px 5px 6px;
@@ -638,3 +561,99 @@ footer {
     padding: 0;
   }
 }
+
+///////
+@media all and (max-width: 395px) {
+  .navbar_main {
+      display: inline-block;
+      background-color: #ff3d1b;
+      width: 100%;
+      font-size: 2.3vh;
+      position: sticky;
+    }
+}
+
+@media all and (max-width: 667px) {
+  .navbar_main {
+    display: inline-block;
+    background-color: #ff3d1b;
+    width: 100%;
+    font-size: 25px;
+    position: sticky;
+  }
+
+  .stars img {
+    display: inline-block;
+    background-color: transparent;
+    height: 50px;
+    width: 50%;
+    position: relative;
+    position: relative;
+    left: 20%;
+  }
+}
+
+@media all and (max-width: 615px) {
+  .navbar_main {
+      display: inline-block;
+      background-color: #ff3d1b;
+      width: 100%;
+      font-size: 3vh;
+      position: sticky;
+    }
+
+  .navbar_visual,
+  figure {
+    display: inline-block;
+    height: 10vh;
+    width: 7vh;
+    padding-left: 5px;
+  }
+
+  .stars img {
+    display: inline-block;
+    background-color: transparent;
+    height: 50px;
+    width: 50%;
+    position: relative;
+    position: relative;
+    left: 20%;
+  }
+
+  .copyright_text {
+    color: white;
+    font-family: "Sansita Swashed", cursive;
+    font-size: 15px;
+    padding: 0px;
+    margin: 10px auto 10px;
+  }
+
+  .socials {
+    height: 20px;
+    width: 20px;
+    float: right;
+    padding: 0px 15px;
+  }
+
+  .footer_logo {
+    width: 75px;
+    height: 50px;
+  }
+
+  #mePic {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 35px;
+    height: 35px;
+  }
+
+  #byMe {
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    color: white;
+  }
+}
+
+/* @media only screen and (max-width: 615px) {
+
+} */

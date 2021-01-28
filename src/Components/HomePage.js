@@ -1,6 +1,9 @@
+import Slideshow from './Slideshow';
+
 const HomePage = () => {
     return(
 <div>
+  <Slideshow />
 <div class="doll_of_month_container">
         <div class="doll_of_month_img"> <img src="https://images-na.ssl-images-amazon.com/images/I/51gbZd4UxSL.jpg" alt="Hello Kitty Doll"></img></div>
         <div class="doll_of_month_txtbox"> 

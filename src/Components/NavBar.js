@@ -16,9 +16,7 @@ return(
       </figure>
       <Link class="navbar_options navbar_items" to="/"> Home </Link>
       <Link class="navbar_options navbar_items" to="/ProductsPage"> Products </Link>
-    <a class="navbar_options navbar_items" href="Contact.html">
-      Contact Us
-      </a>    
+      <Link class="navbar_options navbar_items" to="/ContactPage"> Contact Us </Link>
 </navbar>
 );
 }
