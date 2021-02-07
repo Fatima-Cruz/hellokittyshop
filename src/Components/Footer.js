@@ -5,7 +5,7 @@ const Footer = () => {
     return(
         <footer>
   <div class="grid-container">
-    <div class="grid-item item1"><p class="copyright_text">Hello Kitty Shop ©</p>
+    <div class="grid-item item1"><p class="copyright_text">Hello Kitty Shop &#169; </p>
     </div>
     
        <div class="grid-item item2">

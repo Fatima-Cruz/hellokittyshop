@@ -4,7 +4,6 @@ import hk13 from '../Images/hk13.jpg';
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-import { render } from '@testing-library/react';
 
 const Slideshow = () => {
     return (

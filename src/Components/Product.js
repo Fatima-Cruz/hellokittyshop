@@ -1,9 +1,12 @@
+import React, {useState} from 'react';
+
 const Product = (props) => {
-    const {name, description, price, image} = props.product;
+   const {name, description, price, image} = props.product;
     const productNumber = props.productNumber;
+
     return(
-        <div className={'flexbox_item flexbox_item_${productNumber}'}> 
-        <img src={image} width="200vw" height="190vw" alt={name} />
+        <div className={"flexbox_item flexbox_item_"}> 
+        <img src={image} width="200vw" height="190vw" alt="" />
         <h1 className="product_header">{name}</h1>
         <p className="product_description"> {description}</p>
         <section className="price_cart_box">
