@@ -4,13 +4,15 @@
      "name": "Classic Kitty",
      "description": "The classic outfit from Hello Kitty that we all know and love!",
      "price": 19.99,
-     "image": "/Images/prod3.jpg"
+     "image": "../Images/hk4.png",
+     "category": "Interior"
      },
      {
      "name": "Smarty Kitty",
      "description": "Any experiments and tests will come out positive for Hello Kitty looking cute in a lab coat.",
      "price": 19.99,
-     "image":"src/Images/prod13.jpg"
+     "image":"../image/prod13.jpg",
+     "category": "Interior"
      }, 
      {
      "name": "Spooky Kitty",
