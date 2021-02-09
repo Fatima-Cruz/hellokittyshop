@@ -4,74 +4,96 @@
      "name": "Classic Kitty",
      "description": "The classic outfit from Hello Kitty that we all know and love!",
      "price": 19.99,
-     "image": "../Images/hk4.png",
-     "category": "Interior"
+     "image": "../image/prod2.jpg",
+     "category": "Charity",
+     "badge": "../image/charity.svg"
      },
      {
      "name": "Smarty Kitty",
      "description": "Any experiments and tests will come out positive for Hello Kitty looking cute in a lab coat.",
      "price": 19.99,
      "image":"../image/prod13.jpg",
-     "category": "Interior"
+     "category": "Charity", 
+     "badge": "../image/charity.svg"
      }, 
      {
      "name": "Spooky Kitty",
      "description": "A kitty so cute that you will want to cuddle her to death, and after!",
      "price": 14.99,
-     "image":"Images/prod2.jpg"
+     "image":"../image/prod14.jpg",
+     "category": "Charity",
+     "badge": "../image/charity.svg"
      },
      {
      "name": "Sharky Kitty",
      "description": "She's adorable but she's not afraid to bite if she needs to!",
-     "price": 12.99,
-     "image":"Images/prod2.jpg"
+     "price": 9.99,
+     "image":"../image/prod3.jpg",
+     "category": "Charity",
+     "badge": "../image/charity.svg"
      },
      {
      "name": "Strawberry Kitty",
      "description": "So yummy and sweet that you'll just want to eat her up!",
-     "price": 9.99,
-     "image":"Images/prod2.jpg" 
+     "price": 12.99,
+     "image":"../image/prod4.jpg",
+     "category": "Charity",
+     "badge": "../image/charity.svg"
      },
      {
      "name": "Stripey Kitty",
      "description": "These stripped PJ's call for a nice, cozy cat nap accompanied by some sweet dreams!",
-     "price": 4.99,
-     "image":"Images/prod2.jpg" 
+     "price": 9.99,
+     "image":"../image/prod6.jpeg",
+     "category": "Sale",
+     "badge": "../image/sale.svg"
      },
      {
      "name": "Watery Kitty",
      "description": "Why not go under the sea with this kitty? Seashells, and fun adventures!",
      "price": 39.99,
-     "image":"Images/prod2.jpg"
+     "image":"../image/prod16.jpg",
+     "category": "Limited",
+     "badge": "../image/popular.svg"
      },
      {
      "name": "Bunny Kitty",
      "description": "Can't decide between a bunny or kitty? Neither can we! So why not both?",
      "price": 29.99,
-     "image":"Images/prod2.jpg"
+     "image":"../image/prod1.jpeg",
+     "category": "Charity",
+     "badge": "../image/charity.svg"
      },
      {
      "name": "Scary Kitty",
      "description": "Yikes! Don't be afraid, this monster is completely friendly! She might even invite you out for some ice cream!",
-     "price": 9.99,
-     "image":"Images/prod2.jpg"
+     "price": 4.99,
+     "image":"../image/prod10.jpg",
+     "category": "Sale",
+     "badge": "../image/sale.svg"
      },
      {
      "name": "Ribbity Kitty",
      "description": "Anybody down to play some Leap Frog? This Kitty sure is!",
      "price": 5.99,
-     "image":"Images/prod2.jpg"
+     "image":"../image/prod7.jpeg",
+     "category": "Sale",
+     "badge": "../image/sale.svg"
      },
      {
      "name": "Pretty Kitty",
      "description": "It's not everyday that you wake up just looking this cute!",
      "price": 14.99,
-     "image":"Images/prod2.jpg"
+     "image":"../image/prod18.jpg",
+     "category": "Limited",
+     "badge": "../image/popular.svg"
      },{
      "name": "Snowy Kitty",
      "description": "We love helping our friends, in snow or shine. That's why this Kitty always makes it to the nice list!",
      "price": 49.99,
-     "image":"Images/prod2.jpg"
+     "image":"../image/prod19.jpg",
+     "category": "Limited",
+     "badge": "../image/popular.svg"
      }
  ]
     }

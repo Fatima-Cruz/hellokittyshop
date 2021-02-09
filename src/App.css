@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +12,7 @@ body {
 
 .navbar_main {
   display: inline-block;
-  background-color: #ff3d1b;
+  background-color: transparent;
   width: 100%;
   font-size: 2vw;
   position: sticky;
@@ -27,7 +29,20 @@ figure {
 
 .navbar_items {
   display: inline-block;
-  float: left;
+}
+
+.cart-icon{
+  float: right;
+  height: 5vw;
+  display: inline-block;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.cart-icon:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
 }
 
 .navbar_options {
@@ -53,23 +68,16 @@ figure {
 
 
 .mySlides img {
-  height: 700px;
+  height: 1430px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-#home_body {
-  background: white;
-  margin: 0; 
-  padding: 0;
-  
-} 
 
 .hero_image {
-  background-image: url("Images/hk7.jpg");
-  height: 600px;
+    background-image: url("Images/hk7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,20 +122,29 @@ figure {
 
 .doll_of_month_container {
   display: flex;
-  /* background-color: white; */
   margin: 100px 0px;
   justify-content: center;
 }
 
 .doll_of_month_container > div {
-  background-color: #ffe2e2;
+  background-color: transparent;
   margin: 10px;
   padding: 20px;
   font-size: 30px;
   width: 500px;
   text-align: center;
-  border-radius: 10px;
 }
+.doll_of_month_container img {
+  border-radius: 20%;
+  width: 550px;
+}
+
+.doll_of_month_container a{
+color: rgb(214, 66, 91);
+text-decoration: none;
+font-style: italic;
+}
+
 .doll_of_month_header {
   font-family: "Sansita Swashed", cursive;
   padding: 15px;
@@ -144,10 +161,10 @@ figure {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
   color: white;
-  background: #ff2600;
+  background: rgb(228, 151, 145);
   padding: 10px;
   width: 200px;
-  border-radius: 10px;
+  border-radius: 30px;
   border: none;
   margin: 30px;
   transform: translate(50%, 50%);
@@ -170,51 +187,86 @@ figure {
   position: relative;
   left: 30%;
 }
-
-.stars_text {
+.stars_container p{
   font-family: "Quicksand", sans-serif;
-  font-size: 30px;
-  padding: 1px;
-  position: relative;
-  position: relative;
-  left: 23%;
-  margin-bottom: 100px;
+    font-size: 30px;
+    margin-bottom: 100px;
+    transform: translate(45%, 50%);
+    display:inline-block;
+    padding: 1px;
 }
 
+
 /* Products Page */
+.filtering {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  width: 100%;
+}
+.filtering h3{
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  width: 100%;
+  font-size: 2rem;
+} 
+.filtering p {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: rgb(24, 23, 23);
+  padding: 3px 10px;
+  margin: .3rem;
+}
+
+.filtering p:hover{
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: rgb(228, 151, 145);
+
+  color: black;
+  cursor: pointer;
+}
 
 .product_header {
   font-family: "Sansita Swashed", cursive;
   font-size: 170%;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .product_description {
   font-family: "Raleway", sans-serif;
   font-size: 100%;
+  text-align: center;
+  text-decoration: none;
 }
-.price_cart_box {
-  float: left;
+
+
+.price_cart_box p {
   margin: 10px;
+  padding: 10px;
 }
 
 .price {
   display: inline-block;
+  padding-right: 10px;
 }
 
 .add_to_cart {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: inline-block;
   font-family: "Raleway", sans-serif;
-  color: white;
-  background: #ff2600;
+  color: rgb(24, 23, 23);
+  background: rgb(228, 151, 145);
   padding: 3px 10px;
   border-radius: 8px;
   border: none;
 }
 
 .add_to_cart:hover {
-  background: greenyellow;
+  transition-duration: 0.3s;
+  background:#ff2600;
   color: black;
 }
 
@@ -225,14 +277,18 @@ figure {
   margin: 15px;
   align-items: center;
   margin-bottom: 120px;
+  text-align: center;
 }
 
+
 .flexbox_item {
-  width: 200px;
+  width: 325px;
+  height: 370px;
   margin: 10px;
-  border: 3px dashed grey;
+  border: 3px solid rgb(191, 190, 190);
   background-color: white;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 100%;
 }
 
 .flexbox_item:hover {
@@ -240,32 +296,9 @@ figure {
   transition-duration: 0.3s;
 }
 
-.flexbox_item_1,
-.flexbox_item_2,
-.flexbox_item_3,
-.flexbox_item_4,
-.flexbox_item_5,
-.flexbox_item_6,
-.flexbox_item_7,
-.flexbox_item_8,
-.flexbox_item_9,
-.flexbox_item_10,
-.flexbox_item_11,
-.flexbox_item_12 {
-  min-height: 100px;
-  min-width: 350px;
-  text-align: center;
-}
+
 
 /* Contact Us Page */
-
-.navbar_contact {
-  background-color: #ff2600;
-  display: inline-block;
-  width: 100%;
-  font-size: 2vw;
-  position: sticky;
-}
 
 div .contactBox {
   width: 100%;
@@ -281,6 +314,7 @@ div .contactBox {
   width: 100%;
   padding: 0px;
   margin-right: 0;
+  margin-bottom: 100px
 }
 
 #rate {
@@ -291,8 +325,13 @@ div .contactBox {
   padding: 3px;
 }
 
+#rate:hover{
+  cursor: pointer;
+}
+
 input {
   border-radius: 30px;
+  
 }
 
 textarea {
@@ -300,6 +339,8 @@ textarea {
   border-radius: 30px;
   color: black;
   padding: 5px 25px 5px 6px;
+  width: 25rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 .bow_img {
@@ -451,202 +492,146 @@ footer {
   color: white;
 }
 
-@media all and (max-width: 800px) {
-  .navbar_main {
-    display: inline-block;
-    background-color: #ff3d1b;
-    width: 100%;
-    font-size: 5vw;
-    position: sticky;
-  }
+/* ///////////////////////////////////////////////////////////////// */
 
-  .navbar_visual,
-  figure {
-    display: inline-block;
-    height: 16vw;
-    width: 13vw;
-    float: left;
-    padding-left: 5px;
-  }
-
+@media all and (max-width: 414px) {
   .doll_of_month_container {
     display: grid;
     grid-template-columns: auto;
-    grid-gap: 10px;
-    background-color: white;
-    padding: 0px;
+    width: 100px;
   }
-
-  .doll_of_month_container > div {
-    background-color: #ffe2e2;
-    display: grid;
-    text-align: center;
-    border-radius: 10px;
+  .doll_of_month_container div{
+    background-color: transparent;
+    width: 100px;    
+  }
+  .doll_of_month_container img{
+    width: 100px;
+    height: 360px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10%;
+  }
+  .img_div div{
+    margin:0;
+    padding:0;
   }
   .doll_of_month_header {
     font-family: "Sansita Swashed", cursive;
-    padding: 15px;
+    font-size: 2rem;
+    width: 100px;
+    width: 250px;
+    transform: translate(21%, 2%);
   }
 
   .doll_of_month_p {
+    width: 200px;
     font-family: "Quicksand", sans-serif;
-    font-size: 3vmax;
-    padding: 0px;
+    font-size: 1.3rem;
     display: inline-block;
+    width: 250px;
   }
+  
+  .doll_of_month_button {
+    transform: translate(-15%, 10%);
+    width: 250px;
 
+  }
   .stars img {
     display: inline-block;
     background-color: transparent;
-    height: 120px;
-    width: 60%;
+    height: 80px;
+    width: 90%;
     position: relative;
     position: relative;
-    left: 20%;
+    left: 5%;
   }
 
-  .stars_text {
+  .stars_container p{
     font-family: "Quicksand", sans-serif;
-    font-size: 20px;
-    padding: 1px;
-    position: relative;
-    position: relative;
-    margin-bottom: 100px;
-    left: 15%;
-    width: 100%;
+      font-size: 25px;
+      margin-bottom: 100px;
+      transform: translate(15%, 50%);
+      display:inline-block;
+      padding: 1px;
+      width:350px;
   }
-  .flexbox_item_1,
-  .flexbox_item_2,
-  .flexbox_item_3,
-  .flexbox_item_4,
-  .flexbox_item_5,
-  .flexbox_item_6,
-  .flexbox_item_7,
-  .flexbox_item_8,
-  .flexbox_item_9,
-  .flexbox_item_10,
-  .flexbox_item_11,
-  .flexbox_item_12 {
-    min-height: 100px;
-    min-width: 200px;
-    text-align: center;
-  }
-}
-
-@media all and (min-width: 800px) {
   .navbar_main {
     display: inline-block;
     background-color: #ff3d1b;
     width: 100%;
-    font-size: 4vmin;
-    position: sticky;
   }
-
-  .navbar_visual,
-  figure {
-    display: inline-block;
+  
+  .navbar_visual, figure {
+    display: inline;
     height: 9vw;
     width: 7vw;
     float: left;
-    padding-left: 5px;
+    padding: 3px 8px 10px 3px;
   }
-
-  .doll_of_month_container > div {
-    background-color: #ffe2e2;
-    display: grid;
-    text-align: center;
-    border-radius: 0px;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-///////
-@media all and (max-width: 395px) {
-  .navbar_main {
-      display: inline-block;
-      background-color: #ff3d1b;
-      width: 100%;
-      font-size: 2.3vh;
-      position: sticky;
-    }
-}
-
-@media all and (max-width: 667px) {
-  .navbar_main {
+  
+  .navbar_items {
     display: inline-block;
-    background-color: #ff3d1b;
-    width: 100%;
-    font-size: 25px;
-    position: sticky;
+    
   }
-
-  .stars img {
+  
+  .navbar_options {
     display: inline-block;
-    background-color: transparent;
-    height: 50px;
-    width: 50%;
-    position: relative;
-    position: relative;
-    left: 20%;
-  }
-}
-
-@media all and (max-width: 615px) {
-  .navbar_main {
-      display: inline-block;
-      background-color: #ff3d1b;
-      width: 100%;
-      font-size: 3vh;
-      position: sticky;
-    }
-
-  .navbar_visual,
-  figure {
-    display: inline-block;
-    height: 10vh;
-    width: 7vh;
-    padding-left: 5px;
-  }
-
-  .stars img {
-    display: inline-block;
-    background-color: transparent;
-    height: 50px;
-    width: 50%;
-    position: relative;
-    position: relative;
-    left: 20%;
-  }
-
-  .copyright_text {
-    color: white;
     font-family: "Sansita Swashed", cursive;
-    font-size: 15px;
-    padding: 0px;
-    margin: 10px auto 10px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 8px 10px 3px;
+    font-size: 26px;
+    
   }
-
-  .socials {
-    height: 20px;
-    width: 20px;
+  .cart-icon{
     float: right;
-    padding: 0px 15px;
+    height: 8vw;
+    display: inline-block;
+    margin-right: .2rem;
+    margin-top: .7rem;
+  }
+  .contactBox {
+    margin: auto;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.3rem;
+    margin: 25px 0px;
+    color: white;
+    width: 100%;
+    padding: 0px;
+    margin-right: 0;
+  }
+  textarea {
+    margin-left: 5px;
+    border-radius: 30px;
+    color: black;
+    padding: 5px 25px 5px 6px;
+    width: 20rem;
+    font-family: "Quicksand", sans-serif;
   }
 
+  .bow_img {
+    display: inline;
+    height: 30px;
+    width: 60px;
+    padding:1px;
+  }
+
+  .grid-container {
+    width: 777px;    
+    display: grid;
+    padding: 0px;
+    background-color: blue;
+    height: 99px;
+  }
+  
+  .copyright_text{
+    font-size:16px;
+  }
   .footer_logo {
     width: 75px;
-    height: 50px;
+    height: 60px;
   }
-
-  #mePic {
-    border-radius: 50%;
-    margin-top: 20px;
-    width: 35px;
-    height: 35px;
-  }
-
   #byMe {
     font-family: "Quicksand", sans-serif;
     font-size: 15px;
@@ -654,6 +639,149 @@ footer {
   }
 }
 
-/* @media only screen and (max-width: 615px) {
+@media all and (max-width: 768px) {
+  .doll_of_month_container {
+    display: grid;
+    grid-template-columns: auto;
+    width: 700px;
+  }
+  .doll_of_month_container div{
+    width: 700px;
+    background-color: transparent; 
+  }
+  .doll_of_month_container img{
+    width: 700px;
+    height: 560px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 35px;
+    border-radius: 10%;
+  }
+  .img_div div{
+    margin:0;
+    padding:0;
+  }
+  .doll_of_month_header {
+    font-family: "Sansita Swashed", cursive;
+    font-size: 4rem;
+    width: 700px;
+    transform: translate(3%, 2%);
+  }
 
-} */
+  .doll_of_month_p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.3rem;
+    display: inline-block;
+    width: 700px;
+   
+
+  }
+  
+  .doll_of_month_button {
+    transform: translate(40%, 10%);
+    height: 80px;
+    width: 350px;
+    font-size:1.9rem;
+
+  }
+  .stars img {
+    display: inline-block;
+    background-color: transparent;
+    height: 100px;
+    width: 90%;
+    position: relative;
+    position: relative;
+    left: 5%;
+  }
+
+  .stars_container p{
+    font-family: "Quicksand", sans-serif;
+      font-size: 25px;
+      margin-bottom: 100px;
+      transform: translate(10%, 50%);
+      display:inline-block;
+      padding: 1px;
+      width:700px;
+  }
+  .navbar_main {
+    display: inline-block;
+    background-color: #ff3d1b;
+    width: 100%;
+  }
+  
+  .navbar_visual, figure {
+    display: inline;
+    height: 11vw;
+    width: 9vw;
+    float: left;
+    padding: 3px 8px 10px 3px;
+  }
+  
+  .navbar_items {
+    display: inline-block;
+    font-size: 50px;
+  }
+  
+  .navbar_options {
+    display: inline-block;
+    font-family: "Sansita Swashed", cursive;
+    color: white;
+    text-decoration: none;
+    padding: 10px 8px 10px 3px;
+  }
+  .cart-icon{
+    float: right;
+    height: 8vw;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: .7rem;
+  }
+  .contactBox {
+    margin: auto;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.3rem;
+    margin: 25px 0px;
+    color: white;
+    width: 100%;
+    padding: 0px;
+    margin-right: 0;
+  }
+  textarea {
+    margin-left: 5px;
+    border-radius: 30px;
+    color: black;
+    padding: 5px 25px 5px 6px;
+    width: 25rem;
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .bow_img {
+    display: inline;
+    height: 60px;
+    width: 80px;
+    padding:1px;
+  }
+
+  .grid-container {
+    width: 100%;
+    display: grid;
+    padding: 0px;
+    background-color: #ff2600;
+    height: 99px;
+  }
+  
+  .copyright_text{
+    font-size:25px;
+  }
+  .footer_logo {
+    width: 75px;
+    height: 60px;
+  }
+  #byMe {
+    font-family: "Quicksand", sans-serif;
+    font-size: 23px;
+    color: white;
+  }
+}
+
